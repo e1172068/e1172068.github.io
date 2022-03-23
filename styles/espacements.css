@@ -23,6 +23,10 @@
     padding-top: calc(var(--space-base) * 20);
 }
 
+.px-small {
+    padding: 0 0.5em;
+}
+
 .mt-small {
     margin-top: calc(var(--space-base) * 4);
 }

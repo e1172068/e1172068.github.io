@@ -88,6 +88,11 @@ blockquote p {
     justify-content: space-around;
 }
 
+.menu__wrapper {
+    display: flex;
+    justify-content: space-around;
+}
+
 
 
 /* bouton */
