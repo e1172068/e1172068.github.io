@@ -1,0 +1,36 @@
+/* Espacements */
+.py-small {
+    padding: calc(var(--space-base) * 4) 0;
+}
+
+.py-medium {
+    padding: calc(var(--space-base) * 10) 0;
+}
+
+.py-large {
+    padding: calc(var(--space-base) * 20) 0;
+}
+
+.pt-small {
+    padding-top: calc(var(--space-base) * 4);
+}
+
+.pt-medium {
+    padding-top: calc(var(--space-base) * 10);
+}
+
+.pt-large {
+    padding-top: calc(var(--space-base) * 20);
+}
+
+.mt-small {
+    margin-top: calc(var(--space-base) * 4);
+}
+
+.mt-medium {
+    margin-top: calc(var(--space-base) * 10);
+}
+
+.mt-large {
+    margin-top: calc(var(--space-base) * 20);
+}

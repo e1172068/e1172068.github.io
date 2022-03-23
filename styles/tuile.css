@@ -1,0 +1,28 @@
+.tile {
+    width: 100%;
+    position: relative;
+}
+
+.tile__img-wrapper {
+    width: 100%;
+    padding-bottom: 100%;
+    position: relative;
+    border: 3px var(--xlight-gray) solid;
+}
+
+.tile__img-wrapper:hover {
+    background-color: var(--gray);
+    border: 3px var(--black) dotted;
+}
+
+.tile__img-wrapper:active {
+    border: 3px var(--black) solid;
+}
+
+.tile__img-wrapper * {
+    position: absolute;
+    width: 100%;
+    text-align:center;
+    padding-top: calc(50% - 0.5em);
+    z-index: 1;
+}

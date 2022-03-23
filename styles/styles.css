@@ -1,0 +1,123 @@
+:root{
+    --black: #161616;
+    --white: #ffffff;
+    --xlight-gray: #f4f4f4;
+    --light-gray: #dcdcdc;
+    --gray: #c0c0c0;
+    --space-base: 5px;
+    scroll-behavior: smooth;
+}
+
+
+
+/* GENERIC */
+* {
+    -moz-box-sizing: border-box;
+    -ms-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+/* ELEMENTS */
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+li,
+a {
+    margin: 0;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding-left: 0; 
+}
+
+li {
+    padding: 0.2em;
+}
+
+.article a:not(.button) {
+    text-decoration: none;
+    color: var(--black);
+    font-weight: bold;
+}
+
+.article a:hover:not(.button) {
+    border-bottom: 0.2em dotted black;
+}
+
+.article a:active:not(.button) {
+    border-bottom: 0.2em solid black;
+}
+
+blockquote p {
+    text-align: right;
+} 
+
+/* CLASSES */ 
+.wrapper {
+    padding: 0 6vw;
+}
+
+.bg--light-gray {
+    background-color: var(--light-gray);
+}
+
+.bg--xlight-gray {
+    background-color: var(--xlight-gray);
+}
+
+
+.restaurants {
+    background-color: var(--xlight-gray);
+}
+.restaurants__wrapper {
+    display: flex;
+    justify-content: space-around;
+}
+
+
+
+/* bouton */
+.button {
+    border: 3px solid var(--black);
+    padding: calc(2 * var(--space-base));
+    cursor: pointer;
+    font-weight: bold;
+    box-shadow: 6px 6px 0 var(--black);
+    background-color: var(--light-gray);
+}
+
+.button:hover {
+    background-color: var(--gray);
+    
+    box-shadow: 3px 3px 0 var(--black);
+}
+
+.button:active {
+    box-shadow: 0 0 0 var(--black);
+    background-color: var(--black);
+    color: var(--white);
+}
+
+/* Grille */
+
+.grid {
+    display: grid;
+}
+
+.grid--3 {
+    grid-template-columns: repeat(3, 1fr);
+}

@@ -1,0 +1,33 @@
+/* Pour sections article de type texte-image */
+
+.article__content {
+    display: flex;
+    flex-direction: row;
+}
+
+.article__img-wrapper {
+    width: calc(100%/3);
+}
+
+.article__text-wrapper {
+    display: flex;
+    align-items: center;
+    width: calc(100% * 2/3);
+    height: inherit;
+}
+
+.article__text {
+    display: flex;
+    flex-direction: column;
+    row-gap: 0.5em;
+    align-items: flex-start;
+}
+
+.article__img {
+    background-color: var(--light-gray);
+    padding-bottom: 100%;
+}
+
+.article__img-round {
+    border-radius: 50%;
+}
