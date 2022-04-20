@@ -1,0 +1,72 @@
+/* DROPDOWN */
+ul,
+ol {
+    background: var(--color-primary);
+    list-style: none;
+    margin: 0;
+    padding-left: 0;
+    width: inherit;
+}
+
+.dropdown {
+    font-size: 16px;
+    z-index:2;
+}
+
+ul.menu {
+    display: flex;
+    height: 100%;
+}
+
+.menu li {
+    background: var(--color-primary);
+    cursor: pointer;
+    display: block;
+    padding: 20px 0.7em;
+    position: relative;
+    text-decoration: none;
+    transition: background-color .3s ease;
+}
+
+.menu li:hover {
+    background: var(--color-secondary);
+}
+
+
+
+.menu li a,
+.menu li:hover ul li a {
+    color: var(--white);
+    transition: color .3s ease;
+    white-space: nowrap;
+}
+
+.menu li:hover a,
+.menu li:hover ul li:hover a {
+    color: var(--color-primary);
+}
+
+.menu li ul.dropdown {
+    display: none;
+    left: 0;
+    margin-top: 8vh;
+    min-width: 100%;
+    position: absolute;
+    top: 0;
+    width: fit-content;
+}
+
+ul li:hover > ul.dropdown,
+ul li:focus-within > ul.dropdown,
+ul li ul.dropdown:hover {
+    display: block;
+}
+
+ul li ul.dropdown li {
+    min-width: 100%;
+    width: fit-content;
+}
+
+li:focus-within a {
+    outline: none;
+}

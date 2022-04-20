@@ -1,0 +1,26 @@
+/**
+ *  CSS files 
+ */
+
+@import url("assets/styles/1-settings/variables.css");
+@import url("assets/styles/3-generic/purify.css");
+@import url("assets/styles/4-elements/elements.css");
+@import url("assets/styles/5-objects/wrapper.css");
+@import url("assets/styles/5-objects/spacings.css");
+@import url("assets/styles/5-objects/bg.css");
+@import url("assets/styles/6-components/dropdown.css");
+@import url("assets/styles/6-components/footer.css");
+@import url("assets/styles/6-components/text-image.css");
+@import url("assets/styles/6-components/grid.css");
+@import url("assets/styles/6-components/location.css");
+@import url("assets/styles/6-components/header.css");
+@import url("assets/styles/6-components/header-hero.css");
+@import url("assets/styles/6-components/button.css");
+@import url("assets/styles/6-components/logo.css");
+
+
+/** 
+* Google fonts
+*/
+
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Montserrat:wght@400&display=swap&family=Playfair+Display:wght@600');

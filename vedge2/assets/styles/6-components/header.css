@@ -1,0 +1,65 @@
+/**
+* Header / Components
+*/
+
+.header {
+    align-items: center;
+    display: flex;
+    height: 8vh;
+    min-height: 65px;
+}
+
+.header__content {
+    height: 100%;
+    width: 100%;
+}
+
+
+.header__nav {
+    align-items: center;
+    display: flex;
+    height: 100%;
+    justify-content: space-between;
+}
+
+.header__nav a {
+    color: var(--white);
+}
+
+.header__burger {
+    color: white;
+    display: flex;
+    font-size: 22px;
+    transition: color var(--transition-duration-normal) ease;
+}
+
+.header__burger:hover {
+    color: var(--color-secondary);
+    cursor: pointer;
+}
+
+.header__menu {
+    display: none;
+}
+
+@media only screen and (min-width: 1024px) {
+    .header__menu {
+        display: flex;
+    }
+    
+    .header__burger {
+        display: none;
+    }
+
+    .header__menu {
+        align-items: center;
+        display: flex;
+        height: 100%;
+    }
+    
+    .header__menu-link {
+        align-items: center;
+        height: 100%;
+        display: flex;
+    }
+}

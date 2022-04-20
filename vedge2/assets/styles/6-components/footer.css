@@ -1,0 +1,85 @@
+/**
+* Footer / Components
+*/
+
+.footer__nav a, .footer__nav p {
+    color: var(--white);
+}
+
+.footer__nav {
+    display: flex;
+    flex-direction: column;
+}
+
+.footer__rights {
+    color: var(--white);
+    display: flex;
+    justify-content: center;
+    margin-top: calc(2 * var(--space-base));
+}
+
+.footer__menu {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    margin-top: calc(2 * var(--space-base));
+}
+
+@media only screen and (min-width: 768px){
+    .footer__menu {
+        flex-direction: row;
+        justify-content: center;
+    }
+}
+
+.footer__nav {
+    display: flex;
+    flex-direction: column;
+
+}
+
+.footer__sm {
+    display: flex;
+    justify-content: center;
+}
+
+.footer__list-icon{
+    display: inline-block;
+    padding: 0 0.8em;
+    position: relative;
+}
+
+
+.footer__list {
+    align-items: center;
+    column-gap: 0.5em;
+    display: flex;
+    font-size: 1.5em;
+}
+
+.footer__list li:hover {
+    transform: translateY(-5px);
+}
+
+.footer__list li:hover i {
+    color: var(--color-secondary);
+}
+
+.footer__menu a{
+    padding: 0 0.7em;
+}
+
+@media only screen and (min-width:1200) {
+    .footer__menu a {
+        padding: 0 1em;
+    }
+}
+
+.footer__menu a:hover {
+    background-image: linear-gradient(to top, var(--color-secondary) 50%, transparent 50%);
+    background-position: 0 100%;
+    background-size: 100% 200%;
+    color: var(--color-primary);
+    transition: background-position 400ms , color 400ms ;
+    transition-timing-function: cubic-bezier(0.44, 0.21, 0, 1)
+}

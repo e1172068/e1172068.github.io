@@ -1,0 +1,19 @@
+/**
+* Spacings / Objects
+*/
+
+.py-large {
+    padding: calc(var(--space-base) * 8) 0;
+}
+
+.py-medium {
+    padding: calc(var(--space-base) * 6) 0;
+}
+
+.py-small {
+    padding: calc(var(--space-base) * 4) 0;
+}
+
+.mt-small {
+    margin-top: calc(var(--space-base) * 4) ;
+}

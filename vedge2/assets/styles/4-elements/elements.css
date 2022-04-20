@@ -1,0 +1,24 @@
+/**
+* Elements / Elements
+*/
+
+p {
+    padding: calc(0.5 * var(--space-base)) 0;
+}
+
+h1 {
+    font-family: Playfair Display;
+    font-size: 2.1em;
+}
+
+body {
+    font-size: max(20px, 1.2vw);
+    font-family: var(--font-primary);
+}
+
+a,
+a:hover,
+a:focus,
+a:visited {
+    text-decoration: none;
+}

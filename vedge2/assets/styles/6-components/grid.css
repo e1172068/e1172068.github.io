@@ -1,0 +1,97 @@
+/**
+* Grille / Components
+*/
+
+.grid {
+    display: grid;
+    grid-gap: 1em;
+    grid-template-columns: repeat(1, 1fr);
+}
+
+.grid-container {
+    color: var(--white);
+}
+
+.grid-item {
+    margin-top: var(--space-base);
+    /*note à moi même: empêche le retour à la ligne après le tiret dans Val-Jalbert*/
+    white-space: nowrap;
+}
+
+.grid-item__img h3 {
+    background-color: var(--white);
+    border-radius: 0 0.5em;
+    color: var(--black);
+    left: 50%;
+    padding: 0.2em;
+    position: absolute;
+    top: 50%;
+    transform: translateX(-50%) translateY(-50%);
+}
+
+@media only screen and (min-width: 550px) {
+    .grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media only screen and (min-width: 768px) {
+    .grid {
+    grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+.grid-item__img {
+    filter: grayscale(100%);
+    transition: filter var(--transition-duration-long) ease;
+}
+
+.grid-item:hover .grid-item__img {
+    filter: grayscale(0%);
+}
+
+.grid-item__img-wrapper {
+    width: 100%;
+}
+
+.grid-item__img {
+    background-color: var(--light-gray);
+    display: flex;
+    padding-bottom: 100%;
+}
+
+.grid-item__img--1 {
+    background-image: url("../../../assets/images/restaurant-interior2.jpg");
+    background-position: center;
+    background-size: cover;
+}
+
+.grid-item__img--2 {
+    background-image: url("../../../assets/images/restaurant-interior6.jpg");
+    background-position: center;
+    background-size: cover;
+}
+
+.grid-item__img--3 {
+    background-image: url("../../../assets/images/restaurant-interior4.jpg");
+    background-position: center;
+    background-size: cover;
+}
+
+.grid-item__img--4 {
+    background-image: url("../../../assets/images/restaurant-interior5.jpg");
+    background-position: center;
+    background-size: cover;
+}
+
+.grid-item__img--5 {
+    background-image: url("../../../assets/images/restaurant-interior3.jpg");
+    background-position: center;
+    background-size: cover;
+}
+
+.grid-item__img--6 {
+    background-image: url("../../../assets/images/restaurant-interior7.jpg");
+    background-position: center;
+    background-size: cover;
+}

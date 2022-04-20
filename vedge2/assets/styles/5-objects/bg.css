@@ -1,0 +1,20 @@
+/**
+* Backgrounds / Objects
+*/
+
+.bg--primary {
+    background-color: var(--color-primary);
+}
+
+.bg--secondary {
+    background-color: var(--color-secondary);
+}
+
+.bg--light-green {
+    background-color: var(--light-green);
+    
+}
+
+.bg--white {
+    background-color: var(--white);
+}

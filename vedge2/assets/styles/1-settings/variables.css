@@ -1,0 +1,21 @@
+/**
+ *  variables / settings
+ */
+
+:root {
+    --black: #101319;
+    --color-primary: #1d3a3d;
+    --color-secondary: #FBAE43;
+    --light-green: #cfe9da;
+    --light-gray: Gainsboro;
+    --white: #F5F5F5;
+
+    --font-primary: 'Montserrat', sans-serif;
+    
+    --space-base: max(10px, 1vw);
+
+    --transition-duration-normal: .3s;
+    --transition-duration-long: .7s;
+    --transition-ease: ease;
+
+}

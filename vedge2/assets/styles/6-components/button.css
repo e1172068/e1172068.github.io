@@ -1,0 +1,37 @@
+/**
+* Button / Components
+*/
+
+.button {
+    border-radius: 0 0.5em;
+    padding: 0.5em;
+    position: relative;
+}
+
+.button--primary {
+    background-color: var(--color-primary);
+    color: var(--white);
+    transition: var(--transition-duration-normal) ease;
+    transition-property: color, background-color;
+}
+
+.button--primary:hover {
+    background-color: var(--color-secondary);
+    color: var(--color-primary);
+}
+
+.button--secondary {
+    background-color: var(--color-secondary);
+    color: var(--color-primary);
+    transition: var(--transition-duration-normal) ease;
+    transition-property: color, background-color;
+}
+
+.button--secondary:hover {
+    background-color: var(--color-primary);
+    color: var(--color-secondary);
+}
+
+a.button {
+    cursor: pointer;
+}
