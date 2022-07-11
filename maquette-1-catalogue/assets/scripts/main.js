@@ -44,6 +44,12 @@
                 elAuctionTile.style.setProperty("flex-direction", "column");
                 elDetails.style.removeProperty("flex-basis");
             });
+
+            let elAuctionWrapper = document.querySelectorAll(".auction-tile__img-wrapper");
+            elAuctionWrapper.forEach(function(wrapper) {
+                wrapper.style.removeProperty("width", "20vw");
+                wrapper.style.removeProperty("flex-shrink", "0");
+            });
         }
     });
 })()
